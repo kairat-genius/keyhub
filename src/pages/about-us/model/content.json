@@ -1,0 +1,60 @@
+{
+  "title": "About us",
+  "content": [
+    {
+      "type": "p",
+      "text": "Keyhub is a specialized information platform built for car key\n    programmers, automotive locksmiths, and repair professionals who need\n    reliable data at their fingertips. Our mission is simple: to help you save\n    time, avoid mistakes, and grow your business with access to the most\n    complete knowledge base in the industry."
+    },
+    {
+      "type": "p",
+      "text": "With more than 10 years of hands-on experience and tens of thousands of\n    successfully programmed keys, our team knows exactly how difficult it can be\n    to find the right procedures, tools, and information when working with\n    electronic car keys. Programming immobilisers, ECUs, and transponder keys\n    varies by brand, model, and year, and the information is often scattered\n    across forums, manuals, and tool vendors. That’s why we built Keyhub –\n    to bring everything together in one clear, easy-to-use platform."
+    },
+    {
+      "type": "html",
+      "tag": "h3",
+      "content": "<strong>Why Keyhub?</strong>"
+    },
+    {
+      "type": "html",
+      "tag": "p",
+      "content": "<strong>Wider data coverage:</strong> Our database continues to grow,\n    covering more car brands, models, and systems every month."
+    },
+    {
+      "type": "html",
+      "tag": "p",
+      "content": "<strong>User-friendly interface:</strong> Designed with professionals in\n    mind, so you can find the right programming or coding steps faster than\n    ever."
+    },
+    {
+      "type": "html",
+      "tag": "p",
+      "content": "<strong>Real-world expertise:</strong> Every piece of data is based on real\n    programming and repair jobs, verified by experts."
+    },
+    {
+      "type": "html",
+      "tag": "p",
+      "content": "<strong>For professionals worldwide:</strong> Whether you are a locksmith,\n    auto repair shop, or independent technician, Keyhub gives you the edge\n    you need."
+    },
+    {
+      "type": "html",
+      "tag": "h3",
+      "content": "<strong>Our Vision</strong>"
+    },
+    {
+      "type": "p",
+      "text": "We believe that car key programming should not be guesswork. By giving\n    professionals access to structured and verified information, Keyhub\n    helps reduce wasted time, prevents costly errors, and allows businesses to\n    serve their customers better."
+    },
+    {
+      "type": "html",
+      "tag": "h3",
+      "content": "<strong>Our Community</strong>"
+    },
+    {
+      "type": "p",
+      "text": "Keyhub is more than just a database – it’s a community of dedicated\n    professionals across Europe and North America. Thousands of car key\n    programmers face the same challenges every day, and we are here to provide\n    the tools, insights, and knowledge that make their work smoother and more\n    profitable."
+    },
+    {
+      "type": "p",
+      "text": "As we continue to expand, our commitment stays the same: to be the number\n    one resource for car key programming information worldwide."
+    }
+  ]
+}
