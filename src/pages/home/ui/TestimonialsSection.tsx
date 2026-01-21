@@ -1,30 +1,70 @@
 import { testimonials } from "../model/testimonials";
+import { motion } from "motion/react";
+import ReviewCard from "@/entities/review-card";
+import AnimatedBadge from "@/shared/ui/animated-badge";
 
 const TestimonialsSection = () => {
   return (
-    <section className="mx-auto px-4 max-w-7xl mb-16 lg:mb-36">
-      <h2 className="text-foreground mb-4 text-center text-2xl font-bold lg:text-5xl">
-        What our client say
-      </h2>
-      <p className="text-muted-foreground mb-12 text-center text-lg lg:text-xl">
-        Don't take our word for it – read the kind words of our clients.
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
-        {testimonials.map(({ id, text, author, role }) => (
-          <div
-            key={id}
-            className="border-border bg-card flex flex-col rounded-lg border p-6 shadow-sm h-full md:h-auto"
+    <section id="testimonials" className="container py-24">
+        <div className="text-center mb-16">
+          <AnimatedBadge className="bg-orange-100 text-orange-600">
+            Testimonials
+          </AnimatedBadge>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-4xl md:text-5xl mb-4"
           >
-            <blockquote className="text-muted-foreground mb-4 text-base lg:text-lg leading-relaxed">
-              {text}
-            </blockquote>
-            <div className="mt-auto pt-2">
-              <p className="text-foreground font-semibold">{author}</p>
-              <p className="text-muted-foreground text-sm">{role}</p>
+            Trusted by Professionals
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-xl text-gray-600 max-w-2xl mx-auto"
+          >
+            Join thousands of locksmiths and technicians who rely on our
+            database every day
+          </motion.p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, i) => (
+            <ReviewCard key={i} {...testimonial} index={i} />
+          ))}
+        </div>
+
+        {/* Trust badges */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-16 flex flex-wrap justify-center items-center gap-8 text-gray-400"
+        >
+          <div className="text-center">
+            <div className="text-3xl bg-linear-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent mb-1">
+              4.9/5
             </div>
+            <div className="text-sm">Average Rating</div>
           </div>
-        ))}
-      </div>
+          <div className="h-12 w-px bg-gray-300" />
+          <div className="text-center">
+            <div className="text-3xl bg-linear-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent mb-1">
+              10K+
+            </div>
+            <div className="text-sm">Active Users</div>
+          </div>
+          <div className="h-12 w-px bg-gray-300" />
+          <div className="text-center">
+            <div className="text-3xl bg-linear-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent mb-1">
+              98%
+            </div>
+            <div className="text-sm">Would Recommend</div>
+          </div>
+        </motion.div>
     </section>
   );
 };

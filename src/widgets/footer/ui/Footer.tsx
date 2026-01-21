@@ -1,78 +1,128 @@
+import Icon from "@/shared/icon";
+import { motion } from "motion/react";
 import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className="border-t bg-white">
-      <div className="w-full py-6 lg:py-12 mx-auto px-4 max-w-screen-2xl">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="flex flex-col items-center md:items-start">
-              <Link to="/">
-                <span className="font-bold tracking-tight text-xl text-gray-900">
-                  keyhub
-                </span>
-              </Link>
-              <div className="text-muted-foreground mt-4 text-center text-sm md:text-left">
-                <p>Sahaajankatu 45</p>
-                <p>00800 Helsinki, Finland</p>
-              </div>
+    <footer className="bg-gray-900 text-gray-300 py-16">
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          {/* Brand */}
+          <div>
+            <div className="text-2xl bg-linear-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent mb-4">
+              Keyhub
             </div>
-            <div className="flex flex-col items-center space-y-2">
-              <h3 className="text-sm font-semibold text-gray-900">
-                Contact us
-              </h3>
-              <a
-                href="mailto:info@keyhub.com"
-                className="text-gray-600 transition-colors hover:text-gray-900"
+            <p className="text-gray-400 text-sm mb-6">
+              The most comprehensive database for automotive key programming
+              professionals. Trusted by thousands worldwide.
+            </p>
+            <div className="flex gap-4">
+              <motion.a
+                whileHover={{ scale: 1.1, y: -2 }}
+                href="#"
+                className="size-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-600 transition-colors"
               >
-                info@keyhub.com
-              </a>
+                <Icon icon="github" className="size-5" />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.1, y: -2 }}
+                href="#"
+                className="size-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-600 transition-colors"
+              >
+                <Icon icon="twitter" className="size-5" />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.1, y: -2 }}
+                href="#"
+                className="size-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-600 transition-colors"
+              >
+                <Icon icon="linkedin" className="size-5" />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.1, y: -2 }}
+                href="#"
+                className="size-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-600 transition-colors"
+              >
+                <Icon icon="mail" className="size-5" />
+              </motion.a>
             </div>
-            <div className="hidden flex-col items-center md:block md:items-end">
-              <nav className="flex flex-col items-center space-y-2 md:items-end">
+          </div>
+
+          {/* Product */}
+          <div>
+            <h4 className="text-white mb-4">Product</h4>
+            <ul className="space-y-2">
+              <li>
                 <Link
-                  className="text-gray-600 transition-colors hover:text-gray-900"
-                  to="/keys"
+                  to="#"
+                  className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Keys
+                  Features
                 </Link>
+              </li>
+              <li>
                 <Link
-                  className="text-gray-600 transition-colors hover:text-gray-900"
-                  to="/about-us"
-                >
-                  About Us
-                </Link>
-                <Link
-                  className="text-gray-600 transition-colors hover:text-gray-900"
-                  to="/privacy-policy"
-                >
-                  Privacy Policy
-                </Link>
-                <Link
-                  className="text-gray-600 transition-colors hover:text-gray-900"
-                  to="/terms-and-conditions"
-                >
-                  Terms and Conditions
-                </Link>
-                <Link
-                  className="text-gray-600 transition-colors hover:text-gray-900"
-                  to="https://www.keyhub.com/glossary"
-                >
-                  Glossary
-                </Link>
-                <Link
-                  className="text-gray-600 transition-colors hover:text-gray-900"
-                  to="/pricing"
+                  to="#"
+                  className="text-gray-400 hover:text-white transition-colors"
                 >
                   Pricing
                 </Link>
-              </nav>
-            </div>
+              </li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Database Coverage
+                </Link>
+              </li>
+            </ul>
           </div>
-      </div>
-      <div className="border-t py-8">
-        <p className="text-center text-sm text-gray-500">
-          ©2026 keyhub. All rights reserved.
-        </p>
+
+          {/* Company */}
+          <div>
+            <h4 className="text-white mb-4">Company</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-400 text-sm">
+            © 2026 Keyhub. All rights reserved.
+          </p>
+          <div className="flex gap-6 text-sm">
+            <Link
+              to="/privacy-policy"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="#"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              Terms of Service
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

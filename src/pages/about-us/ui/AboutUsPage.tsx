@@ -1,4 +1,3 @@
-import Team from "@/widgets/team";
 import data from "../model/content.json";
 
 const AboutUsPage = () => {
@@ -30,9 +29,6 @@ const AboutUsPage = () => {
           }
         })}
         </div>
-      </section>
-      <section className="mx-auto px-4 max-w-5xl mb-16 lg:mb-36">
-        <Team />
       </section>
     </>
   );

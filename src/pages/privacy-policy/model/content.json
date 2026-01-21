@@ -93,7 +93,7 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "<strong>Facebook Fan Page</strong> is a public profile named Keyhub\n    specifically created by the Company on the Facebook social network,\n    accessible from\n    <a class=\"text-primary hover:underline\" href=\"https://www.facebook.com/keyhub\">https://www.facebook.com/keyhub</a>"
+      "content": "<strong>Facebook Fan Page</strong> is a public profile named Keyhub\n    specifically created by the Company on the Facebook social network,\n    accessible from\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.facebook.com/keyhub\">https://www.facebook.com/keyhub</a>"
     },
     {
       "type": "html",
@@ -131,7 +131,7 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "<strong>Website</strong> refers to Keyhub, accessible from\n    <a class=\"text-primary hover:underline\" href=\"http://www.keyhub.com/\">http://www.keyhub.com/</a>"
+      "content": "<strong>Website</strong> refers to Keyhub, accessible from\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://www.keyhub.com/\">http://www.keyhub.com/</a>"
     },
     {
       "type": "html",
@@ -219,7 +219,7 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "Cookies can be \"Persistent\" or \"Session\" Cookies. Persistent Cookies remain\n    on Your personal computer or mobile device when You go offline, while\n    Session Cookies are deleted as soon as You close Your web browser. You can\n    learn more about cookies on\n    <a class=\"text-primary hover:underline\" href=\"https://www.termsfeed.com/blog/cookies/#What_Are_Cookies\">TermsFeed website</a>\n    article."
+      "content": "Cookies can be \"Persistent\" or \"Session\" Cookies. Persistent Cookies remain\n    on Your personal computer or mobile device when You go offline, while\n    Session Cookies are deleted as soon as You close Your web browser. You can\n    learn more about cookies on\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.termsfeed.com/blog/cookies/#What_Are_Cookies\">TermsFeed website</a>\n    article."
     },
     {
       "type": "p",
@@ -520,7 +520,7 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "For more information on the privacy practices of Google, please visit the\n    Google Privacy &amp; Terms web page:\n    <a class=\"text-primary hover:underline\" href=\"https://policies.google.com/privacy\">https://policies.google.com/privacy</a>"
+      "content": "For more information on the privacy practices of Google, please visit the\n    Google Privacy &amp; Terms web page:\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://policies.google.com/privacy\">https://policies.google.com/privacy</a>"
     },
     {
       "type": "h3",
@@ -542,7 +542,7 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "Their Privacy Policy can be viewed at\n    <a class=\"text-primary hover:underline\" href=\"https://www.activecampaign.com/legal/privacy-policy\">https://www.activecampaign.com/legal/privacy-policy</a>"
+      "content": "Their Privacy Policy can be viewed at\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.activecampaign.com/legal/privacy-policy\">https://www.activecampaign.com/legal/privacy-policy</a>"
     },
     {
       "type": "h3",
@@ -564,7 +564,7 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "Their Privacy Policy can be viewed at\n    <a class=\"text-primary hover:underline\" href=\"https://stripe.com/us/privacy\">https://stripe.com/us/privacy</a>"
+      "content": "Their Privacy Policy can be viewed at\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://stripe.com/us/privacy\">https://stripe.com/us/privacy</a>"
     },
     {
       "type": "html",
@@ -574,7 +574,7 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "Their Privacy Policy can be viewed at\n    <a class=\"text-primary hover:underline\" href=\"https://www.paypal.com/webapps/mpp/ua/privacy-full\">https://www.paypal.com/webapps/mpp/ua/privacy-full</a>"
+      "content": "Their Privacy Policy can be viewed at\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.paypal.com/webapps/mpp/ua/privacy-full\">https://www.paypal.com/webapps/mpp/ua/privacy-full</a>"
     },
     {
       "type": "h3",
@@ -607,17 +607,17 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "The NAI's opt-out platform:\n    <a class=\"text-primary hover:underline\" href=\"http://www.networkadvertising.org/choices/\">http://www.networkadvertising.org/choices/</a>"
+      "content": "The NAI's opt-out platform:\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://www.networkadvertising.org/choices/\">http://www.networkadvertising.org/choices/</a>"
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "The EDAA's opt-out platform\n    <a class=\"text-primary hover:underline\" href=\"http://www.youronlinechoices.com/\">http://www.youronlinechoices.com/</a>"
+      "content": "The EDAA's opt-out platform\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://www.youronlinechoices.com/\">http://www.youronlinechoices.com/</a>"
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "The DAA's opt-out platform:\n    <a class=\"text-primary hover:underline\" href=\"http://optout.aboutads.info/?c=2&amp;lang=EN\">http://optout.aboutads.info/?c=2&amp;lang=EN</a>"
+      "content": "The DAA's opt-out platform:\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://optout.aboutads.info/?c=2&amp;lang=EN\">http://optout.aboutads.info/?c=2&amp;lang=EN</a>"
     },
     {
       "type": "p",
@@ -643,17 +643,17 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "You can opt-out of Google Analytics for Display Advertising and customize\n    the Google Display Network ads by visiting the Google Ads Settings page:\n    <a class=\"text-primary hover:underline\" href=\"http://www.google.com/settings/ads\">http://www.google.com/settings/ads</a>"
+      "content": "You can opt-out of Google Analytics for Display Advertising and customize\n    the Google Display Network ads by visiting the Google Ads Settings page:\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://www.google.com/settings/ads\">http://www.google.com/settings/ads</a>"
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "Google also recommends installing the Google Analytics Opt-out Browser\n    Add-on -\n    <a class=\"text-primary hover:underline\" href=\"https://tools.google.com/dlpage/gaoptout\">https://tools.google.com/dlpage/gaoptout</a>\n    - for your web browser. Google Analytics Opt-out Browser Add-on provides\n    visitors with the ability to prevent their data from being collected and\n    used by Google Analytics."
+      "content": "Google also recommends installing the Google Analytics Opt-out Browser\n    Add-on -\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://tools.google.com/dlpage/gaoptout\">https://tools.google.com/dlpage/gaoptout</a>\n    - for your web browser. Google Analytics Opt-out Browser Add-on provides\n    visitors with the ability to prevent their data from being collected and\n    used by Google Analytics."
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "For more information on the privacy practices of Google, please visit the\n    Google Privacy &amp; Terms web page:\n    <a class=\"text-primary hover:underline\" href=\"https://policies.google.com/privacy\">https://policies.google.com/privacy</a>"
+      "content": "For more information on the privacy practices of Google, please visit the\n    Google Privacy &amp; Terms web page:\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://policies.google.com/privacy\">https://policies.google.com/privacy</a>"
     },
     {
       "type": "html",
@@ -667,22 +667,22 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "You can learn more about interest-based advertising from Facebook by\n    visiting this page:\n    <a class=\"text-primary hover:underline\" href=\"https://www.facebook.com/help/516147308587266\">https://www.facebook.com/help/516147308587266</a>"
+      "content": "You can learn more about interest-based advertising from Facebook by\n    visiting this page:\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.facebook.com/help/516147308587266\">https://www.facebook.com/help/516147308587266</a>"
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "To opt-out from Facebook's interest-based ads, follow these instructions\n    from Facebook:\n    <a class=\"text-primary hover:underline\" href=\"https://www.facebook.com/help/568137493302217\">https://www.facebook.com/help/568137493302217</a>"
+      "content": "To opt-out from Facebook's interest-based ads, follow these instructions\n    from Facebook:\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.facebook.com/help/568137493302217\">https://www.facebook.com/help/568137493302217</a>"
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "Facebook adheres to the Self-Regulatory Principles for Online Behavioural\n    Advertising established by the Digital Advertising Alliance. You can also\n    opt-out from Facebook and other participating companies through the Digital\n    Advertising Alliance in the USA\n    <a class=\"text-primary hover:underline\" href=\"http://www.aboutads.info/choices/\">http://www.aboutads.info/choices/</a>, the Digital Advertising Alliance of Canada in Canada\n    <a class=\"text-primary hover:underline\" href=\"http://youradchoices.ca/\">http://youradchoices.ca/</a>\n    or the European Interactive Digital Advertising Alliance in Europe\n    <a class=\"text-primary hover:underline\" href=\"http://www.youronlinechoices.eu/\">http://www.youronlinechoices.eu/</a>, or opt-out using your mobile device settings."
+      "content": "Facebook adheres to the Self-Regulatory Principles for Online Behavioural\n    Advertising established by the Digital Advertising Alliance. You can also\n    opt-out from Facebook and other participating companies through the Digital\n    Advertising Alliance in the USA\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://www.aboutads.info/choices/\">http://www.aboutads.info/choices/</a>, the Digital Advertising Alliance of Canada in Canada\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://youradchoices.ca/\">http://youradchoices.ca/</a>\n    or the European Interactive Digital Advertising Alliance in Europe\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://www.youronlinechoices.eu/\">http://www.youronlinechoices.eu/</a>, or opt-out using your mobile device settings."
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "For more information on the privacy practices of Facebook, please visit\n    Facebook's Data Policy:\n    <a class=\"text-primary hover:underline\" href=\"https://www.facebook.com/privacy/explanation\">https://www.facebook.com/privacy/explanation</a>"
+      "content": "For more information on the privacy practices of Facebook, please visit\n    Facebook's Data Policy:\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.facebook.com/privacy/explanation\">https://www.facebook.com/privacy/explanation</a>"
     },
     {
       "type": "h3",
@@ -708,7 +708,7 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "The information gathered by reCAPTCHA is held in accordance with the Privacy\n    Policy of Google:\n    <a class=\"text-primary hover:underline\" href=\"https://www.google.com/intl/en/policies/privacy/\">https://www.google.com/intl/en/policies/privacy/</a>"
+      "content": "The information gathered by reCAPTCHA is held in accordance with the Privacy\n    Policy of Google:\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.google.com/intl/en/policies/privacy/\">https://www.google.com/intl/en/policies/privacy/</a>"
     },
     {
       "type": "h2",
@@ -821,17 +821,17 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "The Company is the Data Controller of Your Personal Data collected while\n    using the Service. As operator of the Facebook Fan Page\n    <a class=\"text-primary hover:underline\" href=\"https://www.facebook.com/keyhub\">https://www.facebook.com/keyhub</a>, the Company and the operator of the social network Facebook are Joint\n    Controllers."
+      "content": "The Company is the Data Controller of Your Personal Data collected while\n    using the Service. As operator of the Facebook Fan Page\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.facebook.com/keyhub\">https://www.facebook.com/keyhub</a>, the Company and the operator of the social network Facebook are Joint\n    Controllers."
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "The Company has entered into agreements with Facebook that define the terms\n    for use of the Facebook Fan Page, among other things. These terms are mostly\n    based on the Facebook Terms of Service:\n    <a class=\"text-primary hover:underline\" href=\"https://www.facebook.com/terms.php\">https://www.facebook.com/terms.php</a>"
+      "content": "The Company has entered into agreements with Facebook that define the terms\n    for use of the Facebook Fan Page, among other things. These terms are mostly\n    based on the Facebook Terms of Service:\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.facebook.com/terms.php\">https://www.facebook.com/terms.php</a>"
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "Visit the Facebook Privacy Policy\n    <a class=\"text-primary hover:underline\" href=\"https://www.facebook.com/policy.php\">https://www.facebook.com/policy.php</a>\n    for more information about how Facebook manages Personal data or contact\n    Facebook online, or by mail: Meta Platforms, Inc. ATTN, Privacy Operations,\n    1601 Willow Road, Menlo Park, CA 94025, United States."
+      "content": "Visit the Facebook Privacy Policy\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.facebook.com/policy.php\">https://www.facebook.com/policy.php</a>\n    for more information about how Facebook manages Personal data or contact\n    Facebook online, or by mail: Meta Platforms, Inc. ATTN, Privacy Operations,\n    1601 Willow Road, Menlo Park, CA 94025, United States."
     },
     {
       "type": "h3",
@@ -852,7 +852,7 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "For more information on the privacy practices of Facebook, please visit\n    Facebook Privacy Policy here:\n    <a class=\"text-primary hover:underline\" href=\"https://www.facebook.com/privacy/explanation\">https://www.facebook.com/privacy/explanation</a>"
+      "content": "For more information on the privacy practices of Facebook, please visit\n    Facebook Privacy Policy here:\n    <a class=\"text-primary-foreground hover:underline\" href=\"https://www.facebook.com/privacy/explanation\">https://www.facebook.com/privacy/explanation</a>"
     },
     {
       "type": "h2",
@@ -1464,17 +1464,17 @@
     {
       "type": "html",
       "tag": "p",
-      "content": "The NAI's opt-out platform:\n    <a class=\"text-primary hover:underline\" href=\"http://www.networkadvertising.org/choices/\">http://www.networkadvertising.org/choices/</a>"
+      "content": "The NAI's opt-out platform:\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://www.networkadvertising.org/choices/\">http://www.networkadvertising.org/choices/</a>"
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "The EDAA's opt-out platform\n    <a class=\"text-primary hover:underline\" href=\"http://www.youronlinechoices.com/\">http://www.youronlinechoices.com/</a>"
+      "content": "The EDAA's opt-out platform\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://www.youronlinechoices.com/\">http://www.youronlinechoices.com/</a>"
     },
     {
       "type": "html",
       "tag": "p",
-      "content": "The DAA's opt-out platform:\n    <a class=\"text-primary hover:underline\" href=\"http://optout.aboutads.info/?c=2&amp;lang=EN\">http://optout.aboutads.info/?c=2&amp;lang=EN</a>"
+      "content": "The DAA's opt-out platform:\n    <a class=\"text-primary-foreground hover:underline\" href=\"http://optout.aboutads.info/?c=2&amp;lang=EN\">http://optout.aboutads.info/?c=2&amp;lang=EN</a>"
     },
     {
       "type": "p",

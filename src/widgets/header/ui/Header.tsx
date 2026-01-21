@@ -1,47 +1,127 @@
+import Icon from "@/shared/icon";
+import { motion } from "motion/react";
+import { useState } from "react";
+import { Link } from "react-router";
+
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="relative full">
-          <div className="mx-auto p-4 max-w-screen-2xl flex items-center justify-between">
-            <div className="flex-1">
-              <a className="" href="/">
-                <span className="text-xl font-bold tracking-tight ">
-                  keyhub
-                </span>
-              </a>
-            </div>
-            <nav className="hidden items-center gap-12 md:flex">
-              <a
-                className="mt-1 text-lg tracking-wide text-black transition-colors hover:text-gray-700 hover:underline"
-                href="/keys"
-              >
+    <motion.header
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      className="fixed top-0 left-0 right-0 z-20 bg-white/80 backdrop-blur-lg border-b border-gray-200"
+    >
+      <div className="container py-4">
+        <div className="flex items-center justify-between">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="text-2xl bg-linear-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent"
+          >
+            <a href="/">Keyhub</a>
+          </motion.div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            <Link
+              to="/keys"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Keys
+            </Link>
+            <Link
+              to="/#features"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Features
+            </Link>
+            <Link
+              to="/#showcase"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Database
+            </Link>
+            <Link
+              to="/#testimonials"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Testimonials
+            </Link>
+            <Link
+              to="/#pricing"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Pricing
+            </Link>
+          </nav>
+
+          <Link
+            to="/login"
+            className="hidden md:flex text-center h-9 px-4 py-2 text-white rounded-md text-sm font-medium bg-linear-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700"
+          >
+            Sign In
+          </Link>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden cursor-pointer"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <Icon icon="close" className="size-6 text-black" />
+            ) : (
+              <Icon icon="menu" className="size-6 text-black" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden pt-4 pb-2"
+          >
+            <nav className="flex flex-col gap-4">
+              <Link to="/keys" className="text-gray-600 hover:text-gray-900">
                 Keys
-              </a>
-              <a
-                className="mt-1 text-lg tracking-wide text-black transition-colors hover:text-gray-700 hover:underline"
-                href="/about-us"
+              </Link>
+              <Link
+                to="/#features"
+                className="text-gray-600 hover:text-gray-900"
               >
-                About us
-              </a>
+                Features
+              </Link>
+              <Link
+                to="/#showcase"
+                className="text-gray-600 hover:text-gray-900"
+              >
+                Database
+              </Link>
+              <Link
+                to="/#testimonials"
+                className="text-gray-600 hover:text-gray-900"
+              >
+                Testimonials
+              </Link>
+              <Link
+                to="/#pricing"
+                className="text-gray-600 hover:text-gray-900"
+              >
+                Pricing
+              </Link>
+              <Link
+                to="/login"
+                className="text-center h-9 px-4 py-2 text-white rounded-md text-sm font-medium bg-linear-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700"
+              >
+                Sign In
+              </Link>
             </nav>
-            <div className="flex flex-1 items-center justify-end gap-2">
-              <div className="hidden md:flex">
-                <button
-                  data-slot="dropdown-menu-trigger"
-                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([className*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:hover:bg-accent/50 size-9 group focus:ring-none rounded-full bg-violet-400 text-white hover:bg-violet-500 hover:text-white focus:outline-none focus-visible:ring-0"
-                  data-testid="user-menu-button"
-                  type="button"
-                  id="radix-_r_0_"
-                  aria-haspopup="menu"
-                  aria-expanded="false"
-                  data-state="closed"
-                >
-                  <span className="text-sm font-medium">Y</span>
-                  <span className="sr-only">User menu</span>
-                </button>
-              </div>
-            </div>
-          </div>
-    </header>
+          </motion.div>
+        )}
+      </div>
+    </motion.header>
   );
 };
 

@@ -1,15 +1,15 @@
 import Header from "@/widgets/header";
 import Footer from "@/widgets/footer";
 import { Outlet } from "react-router";
-import Loader from "@/shared/ui/loader/Loader";
+import Loader from "@/shared/ui/loader";
 import { Suspense } from "react";
 
 const AppLayout = () => {
   return (
     <>
       <Header />
-      <main>
-        <Suspense fallback={<Loader />}>
+      <main className="mt-17">
+        <Suspense fallback={<Loader fullScreen />}>
           <Outlet />
         </Suspense>
       </main>

@@ -1,20 +1,34 @@
-export const testimonials = [
+import type { ReviewCardType } from "@/entities/review-card";
+
+export const testimonials: ReviewCardType[] = [
   {
-    id: 1,
-    text: "“Your platform has allowed me to efficiently optimize the workflow within my team, from response calls to hands-on-time spent at repairs. Keyhub has also accelerated the training of new employees, as I now receive fewer questions and requests for help thanks to the readily available database itself is very scalable and covers all our needs. Great job, keep it up!”",
-    author: "Stepan",
-    role: "Auto Locksmith",
+    name: "Michael Johnson",
+    role: "Automotive Locksmith",
+    company: "KeyMasters Inc.",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    content:
+      "This database has been a game-changer for my business. I can find any procedure I need in seconds and complete jobs 50% faster.",
+    rating: 5,
   },
   {
-    id: 2,
-    text: "“I'm a beginner auto locksmith and your database has made my job so much easier. Special thanks to your support team – over the past two months, you've helped me successfully restore FEM and IFA boards. I can't imagine working without it. This is a must-have for any locksmith!”",
-    author: "Taino",
-    role: "Auto Locksmith",
+    name: "Sarah Williams",
+    role: "Service Center Manager",
+    company: "AutoTech Solutions",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    content:
+      "The video tutorials and detailed diagrams make training new technicians so much easier. Worth every penny.",
+    rating: 5,
   },
   {
-    id: 3,
-    text: "“Keyhub has been a great discovery for me. The content they provide is well-structured, easy to use and always up-to-date. I use the platform daily and it saves me a lot of time. Highly recommend!”",
-    author: "Henry Derr",
-    role: "Car Key Specialist",
+    name: "David Chen",
+    role: "Mobile Locksmith",
+    company: "Quick Key Services",
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+    content:
+      "As a mobile locksmith, having instant access to procedures on my phone is invaluable. This platform has increased my confidence on every job.",
+    rating: 5,
   },
 ];

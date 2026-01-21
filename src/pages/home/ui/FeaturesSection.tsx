@@ -1,48 +1,39 @@
-import Badge from "@/shared/ui/badge";
+import { motion } from "motion/react";
+import { features } from "../model/features";
+import FeatureCard from "@/entities/feature-card";
+import AnimatedBadge from "@/shared/ui/animated-badge";
 
 const FeaturesSection = () => {
   return (
-    <section className="mx-auto px-4 max-w-7xl mb-16 lg:mb-36 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <div className="bg-card rounded-lg border p-6 py-8 md:p-8 md:py-8">
-        <div className="mb-6">
-          <Badge className="mb-6">Accuracy</Badge>
+    <section id="features" className="container py-24">
+        <div className="text-center mb-16">
+          <AnimatedBadge className="bg-orange-100 text-orange-600">Features</AnimatedBadge>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-4xl md:text-5xl mb-4"
+          >
+            Everything You Need in One Place
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-xl text-gray-600 max-w-2xl mx-auto"
+          >
+            Professional tools and resources to make every key programming job
+            faster and more accurate
+          </motion.p>
         </div>
-        <h3 className="text-foreground mb-3 text-3xl font-extrabold md:mb-6">
-          All the Data in One Place
-        </h3>
-        <p className="text-muted-foreground text-lg">
-          With over 3,000 verified car and key profiles, Keyhub gives you
-          instant access to accurate, brand-specific procedures for programming
-          and repairs. Whether you’re working on common models or rare vehicles,
-          the answers you need are always at your fingertips – saving you time,
-          effort, and stress.
-        </p>
-      </div>
-      <div className="bg-card rounded-lg border p-6 py-8 md:p-8 md:py-8">
-        <Badge className="mb-6">Timesaving</Badge>
-        <h3 className="text-foreground mb-3 text-3xl font-extrabold md:mb-6">
-          Work Faster, Save Hours
-        </h3>
-        <p className="text-muted-foreground text-lg">
-          With centralised guidance, professionals are often 30-50% faster on
-          common jobs and, in many cases can save days' worth of time that would
-          otherwise be lost to searching and avoidable rework.
-        </p>
-      </div>
-      <div className="bg-card rounded-lg border p-6 py-8 md:p-8 md:py-8">
-        <div className="mb-6">
-          <Badge className="mb-6">Knowledge</Badge>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, i) => (
+            <FeatureCard key={i} index={i} {...feature} />
+          ))}
         </div>
-        <h3 className="text-foreground mb-3 text-3xl font-extrabold md:mb-6">
-          Confidence in Every Job
-        </h3>
-        <p className="text-muted-foreground text-lg">
-          Don’t risk broken keys, lost time, or frustrated customers. With
-          Keyhub you follow a proven, step-by-step process tailored to
-          each brand, model, and year. Every job gets done right the first time
-          – faster, safer, and with full confidence.
-        </p>
-      </div>
     </section>
   );
 };

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import AppLayout from "../AppLayout";
-import Loader from "@/shared/ui/loader/Loader";
+import Loader from "@/shared/ui/loader";
 import NotFound from "@/shared/ui/NotFound";
 import ErrorPage from "@/shared/ui/ErrorPage";
 
@@ -24,7 +24,22 @@ export const router = createBrowserRouter([
           return { Component: AboutUsPage.default };
         },
       },
-        {
+      {
+        path: "keys",
+        lazy: async () => {
+          const Page = await import("@/pages/keys");
+          return { Component: Page.default };
+        },
+      },
+      {
+        path: "keys/:slug",
+        lazy: async () => {
+          const Page = await import("@/pages/detail");
+          return { Component: Page.default };
+        },
+      },
+
+      {
         path: "terms-and-conditions",
         lazy: async () => {
           const AboutUsPage = await import("@/pages/terms-and-conditions");
@@ -35,6 +50,13 @@ export const router = createBrowserRouter([
         path: "privacy-policy",
         lazy: async () => {
           const AboutUsPage = await import("@/pages/privacy-policy");
+          return { Component: AboutUsPage.default };
+        },
+      },
+      {
+        path: "login",
+         lazy: async () => {
+          const AboutUsPage = await import("@/features/auth/login-form");
           return { Component: AboutUsPage.default };
         },
       },
