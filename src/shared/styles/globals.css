@@ -2,11 +2,8 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-neutral-cool-700: oklch(0.373 0.034 259.733);
   --color-background: oklch(1 0 0);
   --color-foreground: oklch(0.145 0 0);
-  --color-card: oklch(1 0 0);
-  --color-card-foreground: oklch(0.145 0 0);
   --color-popover: oklch(1 0 0);
   --color-popover-foreground: oklch(0.145 0 0);
   --color-primary-foreground: oklch(0.985 0 0);
@@ -21,23 +18,7 @@
   --color-border: oklch(0.922 0 0);
   --color-input: oklch(0.922 0 0);
   --color-ring: oklch(0.708 0 0);
-  --color-chart-1: oklch(0.646 0.222 41.116);
-  --color-chart-2: oklch(0.6 0.118 184.704);
-  --color-chart-3: oklch(0.398 0.07 227.392);
-  --color-chart-4: oklch(0.828 0.189 84.429);
-  --color-chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --color-sidebar: oklch(0.985 0 0);
-  --color-sidebar-foreground: oklch(0.145 0 0);
-  --color-sidebar-primary: oklch(0.205 0 0);
-  --color-sidebar-primary-foreground: oklch(0.985 0 0);
-  --color-sidebar-accent: oklch(0.97 0 0);
-  --color-sidebar-accent-foreground: oklch(0.205 0 0);
-  --color-sidebar-border: oklch(0.922 0 0);
-  --color-sidebar-ring: oklch(0.708 0 0);
 
-  --color-violet-600: #2563eb;
-  --color-indigo-600: #1e3a8a; 
   --color-input-background: #f3f3f5;
 }
 
@@ -90,9 +71,14 @@
 }
 
 
+
 @utility container {
   margin-inline: auto;
-  padding: 0 24px;
   width: 100%;
   max-width: 1536px;
+  padding-inline: 16px;
+
+  @media (min-width: 640px) {
+    padding-inline: 24px;
+  }
 }

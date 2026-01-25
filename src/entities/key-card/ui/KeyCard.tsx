@@ -4,7 +4,6 @@ import type { KeyCardType } from "../model/key-card.type";
 const KeyCard = ({
   title,
   market,
-  type,
   image,
   make,
   model,
@@ -12,51 +11,32 @@ const KeyCard = ({
 }: KeyCardType) => {
   return (
     <Link
-      to="/keys/sss"
-      className="
-        grid grid-cols-[auto_1fr] gap-x-4 gap-y-1
-        px-4 py-4 hover:bg-gray-50 transition-colors
-        md:grid-cols-7 md:items-center md:px-0
-      "
+      className="hover:bg-muted/50 flex items-center gap-4 p-4 transition-colors md:grid md:grid-cols-[100px_1fr_1fr_1.5fr_2fr_1.5fr] md:border-b md:last:border-b-0"
+      to="/keys/4e95b621-fdc3-4f52-a8fa-5d24bbe56aee"
     >
-      {/* Image */}
-      <div className="row-span-6 md:row-span-1 md:px-6">
-        <img
-          src={image}
-          alt={title}
-          className="h-full md:h-20 w-28 rounded-md object-contain"
-        />
-      </div>
+      <img
+        alt={title}
+        loading="lazy"
+        width={96}
+        height={96}
+        decoding="async"
+        className="object-contain shrink-0"
+        src={image}
+      />
 
-      {/* Make */}
-      <div className="col-start-2 text-sm text-gray-900 md:col-auto md:px-6">
-        {make}
+      <div className="flex flex-col gap-2 md:hidden">
+        <span className="text-base font-medium">{title}</span>
+        <div className="flex flex-wrap gap-1">
+          <span className="inline-flex items-center justify-center rounded-md border font-medium w-fit whitespace-nowrap shrink-0 gap-1 focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-secondary text-secondary-foreground px-1.5 py-0 text-[10px]">
+            {market}
+          </span>
+        </div>
       </div>
-
-      {/* Model */}
-      <div className="col-start-2 text-sm text-gray-900 md:col-auto md:px-6">
-        {model}
-      </div>
-
-      {/* Year */}
-      <div className="col-start-2 text-sm text-gray-900 md:col-auto md:px-6">
-        {year}
-      </div>
-
-      {/* Title */}
-      <div className="col-start-2 text-sm text-gray-900 md:col-auto md:px-6">
-        {title}
-      </div>
-
-      {/* Market */}
-      <div className="col-start-2 text-sm text-gray-900 md:col-auto md:px-6">
-        {market}
-      </div>
-
-      {/* Type */}
-      <div className="col-start-2 text-sm text-gray-900 md:col-auto md:px-6">
-        {type}
-      </div>
+      <div className="hidden md:block">{make}</div>
+      <div className="hidden md:block">{model}</div>
+      <div className="hidden md:block">{model}, {year}</div>
+      <div className="hidden md:block">{title}</div>
+      <div className="hidden md:block">{market}</div>
     </Link>
   );
 };

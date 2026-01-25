@@ -29,7 +29,7 @@ const FormField = ({
       {label && (
         <LabelTag
           {...(id ? { htmlFor: id } : {})}
-          className=""
+          className="block text-sm font-semibold text-slate-700"
         >
           {label}
         </LabelTag>

@@ -1,6 +1,7 @@
 import Icon from "@/shared/icon";
 import AnimatedBadge from "@/shared/ui/animated-badge";
 import { motion } from "motion/react";
+import { Link } from "react-router";
 
 const HeroSection = () => {
   return (
@@ -51,7 +52,7 @@ const HeroSection = () => {
             className="text-5xl md:text-7xl mb-6"
           >
             <span className="bg-linear-to-r from-orange-600 via-amber-600 to-orange-600 bg-clip-text text-transparent">
-              Master Key Programming
+              Your Ultimate Automotive Key Programming Tool
             </span>
           </motion.h1>
 
@@ -80,13 +81,13 @@ const HeroSection = () => {
                 className="ml-2 size-5 group-hover:translate-x-1 transition-transform"
               />
             </button>
-            <button className="flex justify-center items-center h-10 rounded-md border bg-background text-foreground hover:bg-accent hover:text-accent-foreground text-lg px-8 py-6 group">
+            <Link to="/keys" className="flex justify-center items-center h-10 rounded-md border bg-background text-foreground hover:bg-accent hover:text-accent-foreground text-lg px-8 py-6 group">
               <Icon
                 icon="play"
                 className="mr-2 size-5 group-hover:scale-110 transition-transform"
               />
-              Watch Demo
-            </button>
+              Browse Keys
+            </Link>
           </motion.div>
 
           {/* Stats */}

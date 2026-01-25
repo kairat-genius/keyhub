@@ -15,17 +15,16 @@ const KeysPage = () => {
         <h1 className="text-2xl text-gray-900 mb-6">Keys</h1>
         <FilterKeys />
         {/* Table */}
-        <div className="overflow-hidden overflow-x-auto w-full rounded-lg border border-gray-200">
-          <div className="hidden md:grid grid-cols-7 border-b border-gray-200 bg-gray-50">
-            <div className="px-6 py-3 text-xs text-gray-600">Image</div>
-            <div className="px-6 py-3 text-xs text-gray-600">Make</div>
-            <div className="px-6 py-3 text-xs text-gray-600">Model</div>
-            <div className="px-6 py-3 text-xs text-gray-600">Model Year</div>
-            <div className="px-6 py-3 text-xs text-gray-600">Title</div>
-            <div className="px-6 py-3 text-xs text-gray-600">Market</div>
-            <div className="px-6 py-3 text-xs text-gray-600">Type</div>
+        <div className="overflow-hidden overflow-x-auto w-full md:rounded-lg md:border border-gray-200">
+          <div className="hidden px-4 py-3 gap-4 md:grid grid-cols-[100px_1fr_1fr_1.5fr_2fr_1.5fr] border-b border-gray-200 bg-gray-50 text-sm font-medium text-gray-600">
+            <div/>
+            <div>Make</div>
+            <div>Model</div>
+            <div>Model Year</div>
+            <div>Title</div>
+            <div>Market</div>
           </div>
-          <div className="divide-y divide-gray-100 bg-white">
+          <div className="md:divide-y divide-gray-100 bg-white">
             {keysData.map((key, i) => (
               <KeyCard key={i} {...key} />
             ))}

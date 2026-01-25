@@ -3,6 +3,7 @@ import AppLayout from "../AppLayout";
 import Loader from "@/shared/ui/loader";
 import NotFound from "@/shared/ui/NotFound";
 import ErrorPage from "@/shared/ui/ErrorPage";
+import Auth from "@/widgets/auth";
 
 export const router = createBrowserRouter([
   {
@@ -54,11 +55,34 @@ export const router = createBrowserRouter([
         },
       },
       {
-        path: "login",
-         lazy: async () => {
-          const AboutUsPage = await import("@/features/auth/login-form");
-          return { Component: AboutUsPage.default };
-        },
+        path: "auth",
+        element: <Auth />,
+        children: [
+          {
+            path: "login",
+            handle: {
+              title: "Welcome back 👋",
+              subtitle:
+                "Sign in to manage your car keys and access your dashboard.",
+            },
+            lazy: async () => {
+              const Page = await import("@/features/auth/login-form");
+              return { Component: Page.default };
+            },
+          },
+          {
+            path: "register",
+            handle: {
+              title: "Create your Keyhub account",
+              subtitle:
+                "Get started and keep all your car keys organized in one place.",
+            },
+            lazy: async () => {
+              const Page = await import("@/features/auth/register-form");
+              return { Component: Page.default };
+            },
+          },
+        ],
       },
       {
         path: "*",

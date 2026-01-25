@@ -54,7 +54,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="#"
+                  to="/#features"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Features
@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/#pricing"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Pricing
@@ -70,10 +70,18 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/#showcase"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Database Coverage
+                  Database
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#testimonials"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Testimonials
                 </Link>
               </li>
             </ul>

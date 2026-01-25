@@ -31,7 +31,7 @@ const Pagination = ({ currentPage, onChange, totalPages, className }: Pagination
             className={cn(
               "cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 aria-invalid:border-destructive h-8 rounded-md gap-1.5 px-3",
               currentPage === page
-                ? "bg-purple-600 text-white hover:bg-purple-700"
+                ? "bg-orange-600 text-white hover:bg-orange-700"
                 : "border bg-background text-foreground hover:bg-accent hover:text-accent-foreground",
             )}
           >
